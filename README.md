@@ -4,7 +4,7 @@ With this package, you can return the location of any package in `ROS2` using `C
 
 ![terminal_output](https://github.com/user-attachments/assets/5ccf3104-1599-49f3-b711-90aa178ab50c)
 
-So let's come to the question of what this package does for us. With this package, you don't need to give a statically named file name in your codes. For example, let's say we have a file named `get_package_share_directory_ws/install/get_package_share_directory/share/get_package_share_director/config` in the directory, and we want to give this file as a parameter in our code.
+So let's come to the question of what this package does for us. With this package, you don't need to give a statically named file name in your codes. For example, let's say we have a file named `get_package_share_director.yaml` which is in the `get_package_share_directory_ws/install/get_package_share_directory/share/get_package_share_director/config` directory, and we want to give this file as a parameter in our code.
 
 Instead of defining a static like `const std::string filename = "/home/zeobora/get_package_share_directory_ws/install/get_package_share_directory/share/get_package_share_director/config/get_package_share_director.yaml"`
 
