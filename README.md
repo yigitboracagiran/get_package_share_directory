@@ -20,17 +20,17 @@ However, it should not be forgotten that in order to use a file in this way, the
 
 Example: `install( DIRECTORY config DESTINATION share/${PROJECT_NAME}/ )`
 
-In this way, the `config` directory becomes available with the `get_package_share_directory` command.
+In this way, the `config` directory becomes available with the `get_package_share_directory` function.
 
 ---------------------------------------------------------
 
-# `get_package_share_directory` Nedir? Nasıl Kullanılır? Ne İşimize Yarar?
+# `get_package_share_directory` Fonksiyonu Nedir? Nasıl Kullanılır? Ne İşimize Yarar?
 
-Bu paket ile `C++` kullanarak `ROS2`'de herhangi bir paketin konumunu `string` şeklinde döndürebilirsiniz. Örneğin `get_package_share_directory` isimli bir paket oluşturalım ve bu paketin konumunu terminalde yazdıralım.
+Bu fonksiyonu kullanarak `ROS2`'de herhangi bir paketin konumunu `string` şeklinde döndürebilirsiniz. Örneğin `get_package_share_directory` isimli bir paket oluşturalım ve bu paketin konumunu terminalde yazdıralım.
 
 ![terminal_output](https://github.com/user-attachments/assets/6e545971-db2e-45dd-a63e-4f3f3e834098)
 
-Peki bu paket ne işimize yarar sorusuna gelelim. Bu paket ile kodlarınızda statik bir şekilde dosya adı vermenize gerek kalmaz. Örneğin diyelim ki `/home/zeobora/get_package_share_directory_ws/install/get_package_share_directory/share/get_package_share_director/config` dizininde `get_package_share_director.yaml` isimli bir dosyamız var bu dosyayı kodumuzda parametre olarak vermek istiyoruz. 
+Peki bu fonksiyon ne işimize yarar sorusuna gelelim. Bu fonksiyon ile kodlarınızda statik bir şekilde dosya adı vermenize gerek kalmaz. Örneğin diyelim ki `/home/zeobora/get_package_share_directory_ws/install/get_package_share_directory/share/get_package_share_director/config` dizininde `get_package_share_director.yaml` isimli bir dosyamız var bu dosyayı kodumuzda parametre olarak vermek istiyoruz. 
 
 `const std::string filename = "/home/zeobora/get_package_share_directory_ws/install/get_package_share_directory/share/get_package_share_director/config/get_package_share_director.yaml"`
 
@@ -44,4 +44,4 @@ Ancak unutulmamalıdır ki bir dosyayı bu şekilde kullanabilmek için paketin 
 
 Ör: `install( DIRECTORY config DESTINATION share/${PROJECT_NAME}/ )`
 
-Bu sayede `config` dizini `get_package_share_directory` komutu ile kullanılabilir hale gelmektedir.
+Bu sayede `config` dizini `get_package_share_directory` fonksiyonu ile kullanılabilir hale gelmektedir.
