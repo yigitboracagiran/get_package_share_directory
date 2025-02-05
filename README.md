@@ -1,4 +1,4 @@
-# What is `get_package_share_directory`? How is it used? And What does it do for us?
+# EN: What is `get_package_share_directory`? How is it used? And What does it do for us?
 
 With this package, you can return the location of any package in `ROS2` using `C++` as a `string`. For example, let's create a package named `get_package_share_directory` and print the location of this package in the terminal.
 
@@ -24,7 +24,7 @@ In this way, the `config` directory becomes available with the `get_package_shar
 
 ---------------------------------------------------------
 
-# `get_package_share_directory` Fonksiyonu Nedir? Nasıl Kullanılır? Ne İşimize Yarar?
+# TR: `get_package_share_directory` Fonksiyonu Nedir? Nasıl Kullanılır? Ne İşimize Yarar?
 
 Bu fonksiyonu kullanarak `ROS2`'de herhangi bir paketin konumunu `string` şeklinde döndürebilirsiniz. Örneğin `get_package_share_directory` isimli bir paket oluşturalım ve bu paketin konumunu terminalde yazdıralım.
 
